@@ -13,57 +13,52 @@
       background: #f9f9f9;
       color: #333;
     }
-
     header {
       background-color: #2e8b57;
       color: white;
       padding: 1rem 2rem;
       text-align: center;
     }
-
     nav {
       background-color: #eee;
       padding: 1rem;
       text-align: center;
     }
-
     nav a {
       margin: 0 1rem;
       text-decoration: none;
       color: #2e8b57;
       font-weight: bold;
     }
-
     main {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
     }
-
     section {
       margin-bottom: 2rem;
     }
-
     .product-image {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
     }
-
-    .order-button {
-      display: inline-block;
-      background-color: #2e8b57;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 1.1rem;
+    .image-row {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
     }
-
-    .order-button:hover {
-      background-color: #246e45;
+    .image-row img {
+      width: 45%;
+      border-radius: 8px;
+      object-fit: cover;
     }
-
+    @media (max-width: 600px) {
+      .image-row img {
+        width: 100%;
+      }
+    }
     footer {
       background-color: #2e8b57;
       color: white;
@@ -93,7 +88,13 @@
         万願寺とうがらしは、京都府舞鶴市発祥の伝統的な京野菜です。<br>
         辛味が少なく、肉厚で甘みがあり、焼いても煮ても美味しい人気の品種です。
       </p>
-      <img src="https://foodslink.jp/syokuzaihyakka/syun/sample/yasai2020/manganji11(6720x4480).jpg" alt="万願寺とうがらし" class="product-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Manganji_pepper.jpg" alt="万願寺とうがらし" class="product-image">
+
+      <!-- ★ 画像2枚を横並びに表示する部分 -->
+      <div class="image-row">
+        <img src="https://www.maff.go.jp/kinki/tiiki/kyoto/photo/sasaki03.jpg" alt="万願寺とうがらし2">
+        <img src="https://foodslink.jp/syokuzaihyakka/syun/sample/yasai2020/manganji11(6720x4480).jpg" alt="万願寺とうがらし3">
+      </div>
     </section>
 
     <section id="products">
@@ -108,17 +109,20 @@
     <section id="order">
       <h2>ご注文方法</h2>
       <p>
-        以下のボタンをクリックすると、ご注文フォームが開きます。<br>
-        フォームに必要事項をご入力のうえ送信してください。
+        以下のオンライン注文フォームよりご注文ください。<br>
       </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYAWfLrUsdQY745wXn76F411_parbqd6wgo9VcbPuLwAY7hQ/viewform"
-         target="_blank" class="order-button">注文フォームを開く</a>
     </section>
 
     <section id="contact">
       <h2>お問い合わせ</h2>
       <p>農園名：〇〇農園<br>所在地：京都府舞鶴市〇〇町<br>営業時間：9:00～17:00（定休日：日曜）</p>
       <p>📧 Email: info@example.com</p>
+    </section>
+
+    <section id="orderform">
+      <h2>オンライン注文フォーム</h2>
+      <p>下記のフォームよりご注文ください。</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYAWfLrUsdQY745wXn76F411_parbqd6wgo9VcbPuLwAY7hQ/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
     </section>
   </main>
 
