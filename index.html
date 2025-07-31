@@ -35,7 +35,7 @@
     }
 
     main {
-      padding: 2rem 1rem;
+      padding: 2rem;
       max-width: 900px;
       margin: auto;
     }
@@ -50,11 +50,18 @@
       border-radius: 8px;
     }
 
-    iframe {
-      width: 100%;
-      max-width: 100%;
-      height: 1200px;
-      border: none;
+    .order-button {
+      display: inline-block;
+      background-color: #2e8b57;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+    }
+
+    .order-button:hover {
+      background-color: #246e45;
     }
 
     footer {
@@ -62,17 +69,6 @@
       color: white;
       text-align: center;
       padding: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-
-      main {
-        padding: 1rem;
-      }
     }
   </style>
 </head>
@@ -112,16 +108,11 @@
     <section id="order">
       <h2>ご注文方法</h2>
       <p>
-        以下のオンライン注文フォームよりご注文ください。
+        以下のボタンをクリックすると、ご注文フォームが開きます。<br>
+        フォームに必要事項をご入力のうえ送信してください。
       </p>
-    </section>
-
-    <section id="orderform">
-      <h2>オンライン注文フォーム</h2>
-      <p>下記のフォームよりご注文ください。</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYAWfLrUsdQY745wXn76F411_parbqd6wgo9VcbPuLwAY7hQ/viewform?embedded=true">
-        読み込んでいます…
-      </iframe>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYAWfLrUsdQY745wXn76F411_parbqd6wgo9VcbPuLwAY7hQ/viewform"
+         target="_blank" class="order-button">注文フォームを開く</a>
     </section>
 
     <section id="contact">
