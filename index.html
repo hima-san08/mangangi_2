@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>万願寺とうがらし直売所</title>
+  <title>万願寺とうがらし直売所｜オンライン注文フォーム</title>
   <style>
     body {
       font-family: "Hiragino Kaku Gothic ProN", sans-serif;
@@ -13,41 +13,66 @@
       background: #f9f9f9;
       color: #333;
     }
+
     header {
       background-color: #2e8b57;
       color: white;
       padding: 1rem 2rem;
       text-align: center;
     }
+
     nav {
       background-color: #eee;
       padding: 1rem;
       text-align: center;
     }
+
     nav a {
       margin: 0 1rem;
       text-decoration: none;
       color: #2e8b57;
       font-weight: bold;
     }
+
     main {
-      padding: 2rem;
+      padding: 2rem 1rem;
       max-width: 900px;
       margin: auto;
     }
+
     section {
       margin-bottom: 2rem;
     }
+
     .product-image {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
     }
+
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 1200px;
+      border: none;
+    }
+
     footer {
       background-color: #2e8b57;
       color: white;
       text-align: center;
       padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      main {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
@@ -55,7 +80,7 @@
 
   <header>
     <h1>万願寺とうがらし直売所</h1>
-    <p>京野菜の王様、旬の味をお届けします！</p>
+    <p>京野菜の王様、万願寺とうがらしをお届けします！</p>
   </header>
 
   <nav>
@@ -87,27 +112,23 @@
     <section id="order">
       <h2>ご注文方法</h2>
       <p>
-        以下のオンライン注文フォームよりご注文ください。<br>
+        以下のオンライン注文フォームよりご注文ください。
       </p>
-          </section>
+    </section>
+
+    <section id="orderform">
+      <h2>オンライン注文フォーム</h2>
+      <p>下記のフォームよりご注文ください。</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYAWfLrUsdQY745wXn76F411_parbqd6wgo9VcbPuLwAY7hQ/viewform?embedded=true">
+        読み込んでいます…
+      </iframe>
+    </section>
 
     <section id="contact">
       <h2>お問い合わせ</h2>
       <p>農園名：〇〇農園<br>所在地：京都府舞鶴市〇〇町<br>営業時間：9:00～17:00（定休日：日曜）</p>
-　　　<p>📧 Email: info@example.com</p>
-
+      <p>📧 Email: info@example.com</p>
     </section>
-
-
-<section id="orderform">
-　<h2>オンライン注文フォーム</h2>
-　<p>下記のフォームよりご注文ください。</p>
-
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYAWfLrUsdQY745wXn76F411_parbqd6wgo9VcbPuLwAY7hQ/viewform?embedded=true" width="640" height="1116" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…
-</iframe>
-</section>
-
   </main>
 
   <footer>
